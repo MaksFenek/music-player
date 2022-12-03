@@ -1,0 +1,17 @@
+div.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  border-radius: 24px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: var(--menu-color);
+
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

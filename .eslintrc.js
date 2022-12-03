@@ -4,27 +4,20 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "standard-with-typescript",
-    "@feature-sliced",
-    "airbnb-base",
-    "airbnb-typescript/base",
+    'standard-with-typescript',
+    'airbnb-base',
+    'airbnb-typescript/base',
+    '@feature-sliced',
+    'prettier',
   ],
   overrides: [],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: "./tsconfig.json",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.json',
   },
   rules: {
-    "import/extensions": [
-      "off",
-      "ignorePackages",
-      {
-        js: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-      },
-    ],
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
